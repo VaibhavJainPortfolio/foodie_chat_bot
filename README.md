@@ -77,8 +77,14 @@ Requirements:
       
 5. After setting up everything
       Activate rasa env then follow the following commands to asses the bot
+      **1.Train Test NLU Model**
       - train model : rasa train nlu
       - to test : rasa shell nlu
+      **2.Train Test Core Model**
+      - train core : rasa train core
+      *To test core model rasa need action server only just because we're using custom zomato api function*
+      - run action server *(on another terminal)*: rasa run action
+      - test core : rasa shell
 
 
 # Thank you !
