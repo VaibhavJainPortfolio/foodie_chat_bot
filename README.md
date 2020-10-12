@@ -80,11 +80,14 @@ Requirements:
       **1.Train Test NLU Model**
       - train model : rasa train nlu
       - to test : rasa shell nlu
+      
       **2.Train Test Core Model**
+      
       - train core : rasa train core
       *To test core model rasa need action server only just because we're using custom zomato api function*
       - run action server *(on another terminal)*: rasa run action
-      - test core : rasa shell
+      - test core : rasa shell (if its showing domain error i.e, pass this rasa train -vv -dump-stories --force)
+     
 
 
 # Thank you !
